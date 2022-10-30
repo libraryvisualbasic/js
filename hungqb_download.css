@@ -1,0 +1,49 @@
+pre {
+position: relative;
+display: block;
+background-image: linear-gradient(#f5fffa 50%,#edf5ed 50%);
+background-size: 100% 3rem;
+background-position: 0 1.5rem;
+background-origin: content-box;
+font-family: "Consolas","Courier New",Courier,Monospace;
+font-size: 14px;
+color: var(--post-text-color);
+white-space: pre-wrap;
+line-height: 1.7em;
+padding: 28px 16px 16px;
+border: 1px solid #ddd;
+border-radius: 2px;
+overflow: auto;
+}
+.darkMode pre {
+background-image: linear-gradient(#191919 50%,#323232 50%);
+background-size: 100% 3rem;
+background-position: 0 1.5rem;
+background-origin: content-box;
+color: #eee;
+}
+.post pre:before {
+content: 'COPYRIGHT @ HUNGQB.COM';
+position: absolute;
+right: 0;
+top: 0;
+color: #ff0;
+font-size: 11px;
+padding: 0 10px;
+z-index: 2;
+line-height: 35px;
+}
+.post pre:hover::before {
+content: 'Nhấp đúp để sao chép | Double click to copy | </>';
+position: absolute;
+right: 0;
+top: 0;
+color: #ff0;
+font-size: 11px;
+padding: 0 10px;
+z-index: 2;
+line-height: 35px;
+}
+.darkMode .post pre:before {
+color: #ccc;
+}
