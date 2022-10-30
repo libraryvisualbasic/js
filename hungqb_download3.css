@@ -11,7 +11,7 @@ color: var(--post-text-color);
 white-space: pre-wrap;
 line-height: 1.7em;
 padding: 28px 16px 16px;
-border: 1px solid #ddd;
+border: 1px solid #333;
 border-radius: 2px;
 overflow: auto;
 }
